@@ -186,30 +186,30 @@ export default async function CityPage({ params }) {
       </section>
 
       {/* Services Grid Matrix */}
-      <section className="section bg-neutral" style={{ backgroundColor: 'var(--color-offwhite)' }}>
+      <section className="section" style={{ backgroundColor: 'var(--color-navy)', color: 'white' }}>
         <div className="container" style={{maxWidth: '1200px'}}>
-          <h2 className="section-title">Comprehensive Painting Services for {data.name}</h2>
+          <h2 className="section-title" style={{ color: 'white' }}>Comprehensive Painting Services for {data.name}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
             
-            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', color: 'var(--color-navy)' }}>
               <h3 style={{ fontSize: '1.4rem', color: 'var(--color-navy)', marginBottom: '1rem' }}>Interior Painting</h3>
               <p style={{ color: '#666', marginBottom: '1.5rem', lineHeight: '1.6' }}>Clean lines, meticulous furniture protection, and striking modern colors to elevate your daily living spaces.</p>
               <Link href="/services/interior-painting" style={{ color: 'var(--color-gold)', fontWeight: 'bold', textDecoration: 'underline' }}>Explore Interior Painting →</Link>
             </div>
 
-            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', color: 'var(--color-navy)' }}>
               <h3 style={{ fontSize: '1.4rem', color: 'var(--color-navy)', marginBottom: '1rem' }}>Exterior Painting</h3>
               <p style={{ color: '#666', marginBottom: '1.5rem', lineHeight: '1.6' }}>Deep power washing, intensive stucco/wood repair, and high-build coatings to guard against the elements.</p>
               <Link href="/services/exterior-painting" style={{ color: 'var(--color-gold)', fontWeight: 'bold', textDecoration: 'underline' }}>Explore Exterior Painting →</Link>
             </div>
 
-            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', color: 'var(--color-navy)' }}>
               <h3 style={{ fontSize: '1.4rem', color: 'var(--color-navy)', marginBottom: '1rem' }}>Cabinet Refinishing</h3>
               <p style={{ color: '#666', marginBottom: '1.5rem', lineHeight: '1.6' }}>Factory-smooth, sprayed urethane finishes that completely transform outdated kitchens for a fraction of a remodel cost.</p>
               <Link href="/services/cabinet-painting" style={{ color: 'var(--color-gold)', fontWeight: 'bold', textDecoration: 'underline' }}>Explore Cabinet Painting →</Link>
             </div>
 
-            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+            <div style={{ background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', color: 'var(--color-navy)' }}>
               <h3 style={{ fontSize: '1.4rem', color: 'var(--color-navy)', marginBottom: '1rem' }}>Trim, Doors & Baseboards</h3>
               <p style={{ color: '#666', marginBottom: '1.5rem', lineHeight: '1.6' }}>Sharp, high-gloss or satin finishes on your architectural focal points to make your entire house pop.</p>
               <span style={{ color: '#999', fontSize: '0.9rem' }}>Included in Interior Services</span>
