@@ -15,8 +15,8 @@ export default function Header() {
             <Image 
               src="/logotransparent.png" 
               alt="South Bay Home Painting" 
-              width={220} 
-              height={60} 
+              width={280} 
+              height={76} 
               priority
               className={styles.logo}
             />
