@@ -100,6 +100,20 @@ export default async function CityPage({ params }) {
             <li><Link href="/services/cabinet-painting" style={{color: 'var(--color-navy)', textDecoration:'underline'}}>Cabinet Painting</Link></li>
           </ul>
 
+          <h3 style={{ marginTop: '2rem' }}>Other Areas We Serve in the South Bay</h3>
+          <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '1rem' }}>
+            Not in {data.name}? We proudly serve neighboring communities:
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '1rem', marginBottom: '2rem' }}>
+            {Object.entries(cityData).map(([slug, cityInfo]) => (
+              slug !== city ? (
+                <Link key={slug} href={`/service-areas/${slug}`} style={{ textDecoration: 'underline', color: 'var(--color-gold)', fontWeight: 'bold' }}>
+                  {cityInfo.name}
+                </Link>
+              ) : null
+            ))}
+          </div>
+
           <div style={{marginTop: '3rem', textAlign: 'center', background: 'var(--color-neutral)', padding: '3rem', borderRadius: '8px'}}>
             <h2 style={{marginBottom: '1rem'}}>Ready for a Free Quote in {data.name}?</h2>
             <Link href="/contact" className="btn-primary">Request Estimate Today</Link>

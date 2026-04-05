@@ -5,15 +5,20 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
 
 export const metadata = {
+  metadataBase: new URL('https://southbayhomepainting.com'),
   title: "South Bay Home Painting | Premium Residential Painters in South Bay",
-  description: "South Bay Home Painting provides premium interior, exterior, and cabinet painting for homeowners in Torrance and the South Bay. Free estimates.",
+  description: "Top-rated residential painters serving Torrance, Palos Verdes, Redondo Beach, and the South Bay. We specialize in premium interior, exterior, and fine-finish cabinet painting. Fully licensed, bonded, and insured.",
+  keywords: "House painters South Bay, Interior painting Torrance, Exterior painting Palos Verdes, Cabinet painting Redondo Beach, Residential painting contractor CA",
   openGraph: {
-    title: 'South Bay Home Painting | Premium Residential Painters in South Bay',
-    description: 'South Bay Home Painting provides premium interior, exterior, and cabinet painting for homeowners in Torrance and the South Bay. Free estimates.',
+    title: 'South Bay Home Painting | Premium Residential Painting Experts',
+    description: 'Top-rated residential painters serving Torrance, Palos Verdes, Redondo Beach, and the South Bay.',
     url: 'https://southbayhomepainting.com',
     siteName: 'South Bay Home Painting',
     locale: 'en_US',
     type: 'website',
+  },
+  alternates: {
+    canonical: '/',
   },
 };
 
@@ -37,6 +42,14 @@ export default function RootLayout({ children }) {
       postalCode: '90505',
       addressCountry: 'US'
     },
+    areaServed: [
+      { '@type': 'City', name: 'Torrance' },
+      { '@type': 'City', name: 'Redondo Beach' },
+      { '@type': 'City', name: 'Manhattan Beach' },
+      { '@type': 'City', name: 'Hermosa Beach' },
+      { '@type': 'City', name: 'Palos Verdes' },
+      { '@type': 'City', name: 'El Segundo' }
+    ],
     geo: {
       '@type': 'GeoCoordinates',
       latitude: 33.8358,

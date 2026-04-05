@@ -109,9 +109,26 @@ export default async function ServicePage({ params }) {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section className="section bg-white" style={{ borderTop: '1px solid #eaeaea' }}>
+        <div className="container" style={{maxWidth: '800px', margin: '0 auto', textAlign: 'center'}}>
+          <h3 style={{ marginBottom: '1rem' }}>Areas We Serve for {data.name}</h3>
+          <p style={{ color: '#666', lineHeight: '1.8' }}>
+            We provide our signature {data.name.toLowerCase()} services to homeowners throughout the South Bay, including: 
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+            <Link href="/service-areas/torrance" style={{ textDecoration: 'underline', color: 'var(--color-navy)', fontWeight: 'bold' }}>Torrance</Link> | 
+            <Link href="/service-areas/redondo-beach" style={{ textDecoration: 'underline', color: 'var(--color-navy)', fontWeight: 'bold' }}>Redondo Beach</Link> | 
+            <Link href="/service-areas/manhattan-beach" style={{ textDecoration: 'underline', color: 'var(--color-navy)', fontWeight: 'bold' }}>Manhattan Beach</Link> | 
+            <Link href="/service-areas/hermosa-beach" style={{ textDecoration: 'underline', color: 'var(--color-navy)', fontWeight: 'bold' }}>Hermosa Beach</Link> | 
+            <Link href="/service-areas/palos-verdes" style={{ textDecoration: 'underline', color: 'var(--color-navy)', fontWeight: 'bold' }}>Palos Verdes</Link> | 
+            <Link href="/service-areas/el-segundo" style={{ textDecoration: 'underline', color: 'var(--color-navy)', fontWeight: 'bold' }}>El Segundo</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{backgroundColor: 'var(--color-navy)', color: 'white'}}>
         <div className="container" style={{textAlign: 'center'}}>
-          <h2>Ready to upgrade your home?</h2>
+          <h2 style={{color: 'white'}}>Ready to upgrade your home?</h2>
           <br/>
           <Link href="/contact" className="btn-primary">Request Your Free Proposal</Link>
         </div>
