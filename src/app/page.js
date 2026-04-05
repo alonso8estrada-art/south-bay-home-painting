@@ -60,14 +60,13 @@ export default function Home() {
       <section className={`section ${styles.whyChooseUs}`}>
         <div className={`container ${styles.splitGrid}`}>
           <div className={styles.splitContent}>
-            <h2 style={{ fontSize: '2.5rem', lineHeight: '1.2' }}>Why South Bay Homeowners Demand the Best</h2>
-            <p style={{ fontSize: '1.1rem', color: '#555' }}>We are not your typical painting contractor. We believe your luxury home deserves the highest level of care, respect, and meticulous craftsmanship.</p>
+            <h2 style={{ fontSize: '2.5rem', lineHeight: '1.2' }}>Why South Bay Homeowners Choose Us</h2>
+            <p style={{ fontSize: '1.1rem', color: '#555' }}>We are not your typical painting contractor. We don't just paint; we execute a flawless process.</p>
             <ul className={styles.checkmarkList}>
-              <li><strong>Premium workmanship:</strong> We never cut corners.</li>
-              <li><strong>Clean & respectful crews:</strong> We protect your home.</li>
-              <li><strong>Detailed preparation:</strong> The key to a finish that lasts.</li>
-              <li><strong>Clear communication:</strong> You are never left guessing.</li>
-              <li><strong>South Bay local focus:</strong> We know coastal homes.</li>
+              <li><strong>We prep properly:</strong> (Most painters don't—this is why paint fails)</li>
+              <li><strong>We protect your home:</strong> Full masking and drop cloths, every time</li>
+              <li><strong>We communicate daily:</strong> You are never left guessing where the project stands</li>
+              <li><strong>We don’t cut corners:</strong> High-end paints and proper technique only</li>
             </ul>
             <br />
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
@@ -75,6 +74,33 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.splitImage} style={{backgroundImage: 'url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80")'}}></div>
+        </div>
+      </section>
+
+      {/* High-Value Offer / Promise */}
+      <section className="section bg-neutral" style={{ backgroundColor: 'var(--color-navy)', color: 'white' }}>
+        <div className="container">
+          <h2 className="section-title" style={{ color: 'white' }}>Our Promise to Homeowners</h2>
+          <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', color: '#ccc' }}>
+            We know what it means to invite contractors into your luxury home. That’s why we operate under three iron-clad promises that guarantee your peace of mind.
+          </p>
+          <div className={styles.promiseGrid}>
+            <div className={styles.promiseCard}>
+              <span className={styles.promiseIcon}>🛡️</span>
+              <h3>3-Year No-Peel Guarantee</h3>
+              <p>Because we meticulously prepare every inch of surface before applying premium paint, we confidently guarantee our finishes will not peel, flake, or fail.</p>
+            </div>
+            <div className={styles.promiseCard}>
+              <span className={styles.promiseIcon}>⏱️</span>
+              <h3>On-Time Completion</h3>
+              <p>Your time is valuable. We provide accurate project timelines upfront, show up exactly when we say we will, and finish on schedule.</p>
+            </div>
+            <div className={styles.promiseCard}>
+              <span className={styles.promiseIcon}>🧹</span>
+              <h3>Daily Cleanup</h3>
+              <p>You shouldn’t have to live in a messy construction zone. Our crews lay down pristine drop cloths and perform a complete cleanup at the end of every single day.</p>
+            </div>
+          </div>
         </div>
       </section>
 
