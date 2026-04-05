@@ -134,6 +134,37 @@ export default async function CityPage({ params }) {
         </div>
       </section>
 
+      {/* RECENT PROJECTS (LOCAL PROOF) */}
+      <section className="section" style={{ backgroundColor: 'var(--color-offwhite)' }}>
+        <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+          <h2 className="section-title" style={{ color: 'var(--color-navy)' }}>Recent Projects in {data.name}</h2>
+          <p style={{ textAlign: 'center', fontSize: '1.1rem', color: '#555', marginBottom: '3rem' }}>
+            We specialize in {data.name} homes. Here are a few examples of our recent local work:
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+            {data.recentProjects && data.recentProjects.map((proj, idx) => (
+              <div key={idx} style={{ background: 'white', padding: '2rem', borderRadius: '8px', borderLeft: '4px solid var(--color-gold)', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <span style={{ fontSize: '1.5rem', marginRight: '0.5rem' }}>📍</span>
+                  <p style={{ color: '#888', textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '1px', fontWeight: 'bold', margin: 0 }}>{proj.location}</p>
+                </div>
+                <h3 style={{ color: 'var(--color-navy)', fontSize: '1.3rem', margin: 0 }}>{proj.type}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY MANHATTAN BEACH HOMEOWNERS CHOOSE US */}
+      <section className="section bg-white" style={{ borderTop: '1px solid #eee', borderBottom: '1px solid #eee' }}>
+        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-navy)', marginBottom: '1.5rem' }}>Why {data.name} Homeowners Choose Us</h2>
+          <p style={{ fontSize: '1.15rem', color: '#555', lineHeight: '1.8', marginBottom: '2rem' }}>
+            {data.name} clients are extremely detail-oriented. We constantly out-perform other local painters because of our experience with high-end luxury homes. Our professional crews are immaculately clean, we treat your property with incredible respect, and our attention to detail guarantees a flawless execution that standard contractors simply cannot match.
+          </p>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="section" style={{ backgroundColor: 'var(--color-offwhite)', borderTop: '1px solid #eee' }}>
         <div className="container" style={{maxWidth: '800px', margin: '0 auto'}}>
@@ -155,7 +186,7 @@ export default async function CityPage({ params }) {
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem' }}>
           {Object.entries(cityData).map(([slug, cityInfo]) => (
             slug !== city ? (
-              <Link key={slug} href={`/service-areas/${slug}`} style={{ color: 'var(--color-gold)', fontWeight: 'bold', textDecoration: 'underline' }}>
+              <Link key={slug} href={`/service-areas/${slug}`} style={{ color: 'var(--color-navy)', fontWeight: 'bold', textDecoration: 'none' }}>
                 {cityInfo.name}
               </Link>
             ) : null
@@ -163,16 +194,16 @@ export default async function CityPage({ params }) {
         </div>
       </section>
 
-      {/* VIP CTA */}
+      {/* VIP CTA UPDATE */}
       <section className="section" style={{ background: 'var(--color-navy)', color: 'white' }}>
         <div className="container" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontFamily: 'var(--font-serif)', color: 'white' }}>Ready for a Flawless Finish?</h2>
+          <h2 style={{ fontSize: '3rem', marginBottom: '1rem', fontFamily: 'var(--font-serif)', color: 'white' }}>Get Your Free Estimate in {data.name}</h2>
           <p style={{ fontSize: '1.2rem', marginBottom: '3rem', color: '#ccc' }}>
-            Don’t trust your luxury {data.name} home to the lowest bidder. Schedule a free walk-through today to receive a transparent, no-obligation quote from South Bay's premier painting crew.
+            Book your painting estimate in 24 hours. Because we specialize in high-end {data.name} homes, our meticulous crews have limited weekly availability.
           </p>
           <div style={{ background: 'white', padding: '3rem', borderRadius: '8px', color: 'var(--color-navy)', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
-            <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Get Your Free Estimate</h3>
-            <p style={{ marginBottom: '2rem', color: '#555' }}>Fill out the form below or call us directly at <strong>(310) 704-1147</strong>.</p>
+            <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Lock In Your Consultation</h3>
+            <p style={{ marginBottom: '2rem', color: '#555' }}>Fill out the form perfectly tailored for {data.name} residents or call us directly at <strong>(310) 704-1147</strong>.</p>
             <Link href="/contact" className="btn-primary" style={{ display: 'inline-block', fontSize: '1.2rem', padding: '1rem 3rem' }}>
               Schedule Walk-Through Now
             </Link>

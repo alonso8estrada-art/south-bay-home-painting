@@ -27,6 +27,11 @@ export const cityData = {
       ]
     },
     prepFocus: 'Torrance requires dual-prep precision. Coastal salt management in the West, and extreme UV mitigation in the East. Our dual-primer system guarantees a robust defense regardless of your zip code.',
+    recentProjects: [
+      { type: 'Exterior Repaint', location: 'Hollywood Riviera' },
+      { type: 'Interior Repaint', location: 'South Torrance' },
+      { type: 'Cabinet Refinishing', location: 'Walteria' }
+    ],
     typicalProjects: [
       'Whole-home interior repaints for new property purchases',
       'Factory-finish kitchen cabinet restorations',
@@ -71,6 +76,11 @@ export const cityData = {
       ]
     },
     prepFocus: 'Homes in Redondo Beach face a lethal combination of UV radiation and highly corrosive salt air. We utilize chemical salt-neutralizing washes and flexible marine-grade primers to lock out moisture before the final color coat is applied.',
+    recentProjects: [
+      { type: 'Weatherproofing Exterior', location: 'The Esplanade' },
+      { type: 'Interior Level 5 Repaint', location: 'South Redondo' },
+      { type: 'Custom Cabinet Painting', location: 'North Redondo' }
+    ],
     typicalProjects: [
       'Weatherproofing exterior sea-facing walls and decks',
       'Bright, modern interior repaints to maximize natural light',
@@ -97,7 +107,7 @@ export const cityData = {
       heading: 'Defending High-End Architecture Against the Coast',
       paragraphs: [
         'Manhattan Beach architecture is stunning, often utilizing massive glass facades, custom architectural stucco, and rich wood accents. However, homes located in the Sand Section and Hill Section face extreme, unrelenting coastal winds and intense direct sunlight. This constant bombardment breaks down standard paint films at an accelerated rate, leaving luxury homes looking prematurely aged.',
-        'South Bay Home Painting utilizes a commercial-grade coastal preparation protocol. Before applying a single drop of paint, we comprehensively clean the exterior to remove corrosive salt buildup. We utilize extreme-adhesion primers and elastomeric coatings that are highly resistant to UV fading. Our goal isn\'t just to make the house look beautiful for the summer—it is to armor the structure for the next decade.'
+        'Painting Homes in Manhattan Beach Requires Coastal Expertise. Standard paints do not survive here. South Bay Home Painting utilizes a commercial-grade coastal preparation protocol. Before applying a single drop of paint, we comprehensively clean the exterior to remove corrosive salt buildup. We utilize extreme-adhesion primers and elastomeric coatings that are highly resistant to UV fading. Our goal isn\'t just to make the house look beautiful for the summer—it is to armor the structure for the next decade.'
       ]
     },
     seoBody2: {
@@ -115,6 +125,11 @@ export const cityData = {
       ]
     },
     prepFocus: 'From the Sand Section to the Tree Section, Manhattan Beach homes face intense direct sunlight and coastal wind. Our prep phase involves extreme dust containment, marine-grade caulking, and salt-wash treatments to ensure the paint bonds permanently.',
+    recentProjects: [
+      { type: 'Exterior Repaint', location: 'Sand Section' },
+      { type: 'Interior Custom Repaint', location: 'Tree Section' },
+      { type: 'Cabinet Refinishing', location: 'East Manhattan' }
+    ],
     typicalProjects: [
       'Luxury kitchen and bathroom cabinet refinishing',
       'Ultra-smooth Level 5 drywall prep and painting',
@@ -159,6 +174,11 @@ export const cityData = {
       ]
     },
     prepFocus: 'Hermosa Beach requires extreme attention to thermal expansion. We utilize elastomeric caulking and high-build flexible primers that expand and contract with the coastal temperature swings to prevent stucco cracking.',
+    recentProjects: [
+      { type: 'Balcony Weatherproofing', location: 'The Strand' },
+      { type: 'Investment Property Repaint', location: 'Hermosa Valley' },
+      { type: 'Exterior Stucco Finish', location: 'East Hermosa' }
+    ],
     typicalProjects: [
       'Coastal exterior repaints and waterproofing',
       'Rental property interior refreshes and modernizations',
@@ -203,6 +223,11 @@ export const cityData = {
       ]
     },
     prepFocus: 'Palos Verdes prep is defined by two things: fixing huge stucco settling cracks and navigating massive heights. We utilize specialized scaffolding teams and elastomeric patching systems to ensure hillside homes are structurally sealed.',
+    recentProjects: [
+      { type: 'Hillside Exterior Patch & Paint', location: 'Lunada Bay' },
+      { type: '20-Foot Ceiling Interior Repaint', location: 'Rolling Hills' },
+      { type: 'Library Millwork Refinishing', location: 'Palos Verdes Estates' }
+    ],
     typicalProjects: [
       'High-ceiling interior great room and entryway repainting',
       'Extensive exterior stucco patching for hillside settling cracks',
@@ -247,6 +272,11 @@ export const cityData = {
       ]
     },
     prepFocus: 'El Segundo features beautiful historic homes that require extreme care, lead safety protocols, gentle sanding, and wood preservation techniques to maintain their original charm while giving them a flawless modern finish.',
+    recentProjects: [
+      { type: 'Historic Craftsman Exterior', location: 'Downtown El Segundo' },
+      { type: 'Modern Interior Refresh', location: 'The Hill' },
+      { type: 'Commercial Touch-up', location: 'Smoky Hollow' }
+    ],
     typicalProjects: [
       'Historic craftsman home exterior preservation and repainting',
       'Brightening outdated living spaces and dark trim',
