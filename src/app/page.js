@@ -142,19 +142,19 @@ export default function Home() {
       </section>
 
       {/* Embedded Lead Form / CTA */}
-      <section className={`section ${styles.ctaSection}`} style={{ backgroundColor: 'var(--color-neutral)' }}>
-        <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-navy)', marginBottom: '1rem', fontFamily: 'var(--font-serif)' }}>Ready to Transform Your Home?</h2>
-          <p style={{ fontSize: '1.1rem', marginBottom: '3rem' }}>
+      <section className={`section ${styles.ctaSection}`}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, maxWidth: '800px', margin: '0 auto', textAlign: 'center', color: 'white' }}>
+          <h2 style={{ fontSize: '2.5rem', color: 'white', marginBottom: '1rem', fontFamily: 'var(--font-serif)' }}>Ready to Transform Your Home?</h2>
+          <p style={{ fontSize: '1.1rem', marginBottom: '3rem', color: '#e0e0e0' }}>
             Reach out today for a free estimate and experience the precision of a premium painting service.
           </p>
           
-          <div style={{ textAlign: 'left', background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+          <div style={{ textAlign: 'left', background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.2)', color: 'var(--color-navy)' }}>
              <LeadForm />
           </div>
 
           <div style={{ marginTop: '2rem' }}>
-            <p>Or call us directly at <strong><Link href="tel:+13107041147" style={{ color: 'var(--color-navy)', textDecoration: 'underline' }}>(310) 704-1147</Link></strong></p>
+            <p>Or call us directly at <strong><Link href="tel:+13107041147" style={{ color: 'var(--color-gold)', textDecoration: 'underline' }}>(310) 704-1147</Link></strong></p>
           </div>
         </div>
       </section>
