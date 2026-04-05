@@ -149,7 +149,7 @@ export default function Home() {
             Reach out today for a free estimate and experience the precision of a premium painting service.
           </p>
           
-          <div style={{ textAlign: 'left', background: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.2)', color: 'var(--color-navy)' }}>
+          <div style={{ textAlign: 'left', color: 'var(--color-navy)' }}>
              <LeadForm />
           </div>
 
