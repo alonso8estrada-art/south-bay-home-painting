@@ -20,6 +20,7 @@ export default function Footer() {
           <div className={styles.contactInfo}>
             <p><strong>Phone:</strong> <a href="tel:+13107041147">(310) 704-1147</a></p>
             <p><strong>Email:</strong> <a href="mailto:info@southbayhomepainting.com">info@southbayhomepainting.com</a></p>
+            <p style={{ marginTop: '1rem', fontWeight: 'bold', color: 'var(--color-gold)' }}>LIC #1109637 Bonded & Insured</p>
           </div>
         </div>
 
