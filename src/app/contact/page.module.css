@@ -1,0 +1,21 @@
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contactList {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+.contactList li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,119 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-navy);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: var(--color-white);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-gold);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.hamburgerBtn {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburgerBtn svg {
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-navy);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+  
+  .navOpen {
+    max-height: 500px;
+    padding: 1.5rem 0 2rem 0;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .mobileActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .mobileCallBtn {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+}

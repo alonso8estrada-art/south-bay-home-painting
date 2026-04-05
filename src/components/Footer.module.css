@@ -1,0 +1,75 @@
+.footer {
+  background-color: var(--color-navy-light);
+  color: var(--color-white);
+  padding-top: 5rem;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.brandStatement {
+  color: #c4c4c4;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.contactInfo p {
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+}
+
+.contactInfo a {
+  color: var(--color-gold);
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+.column h3 {
+  color: var(--color-gold);
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.linksList li {
+  margin-bottom: 0.8rem;
+}
+
+.linksList a {
+  color: #c4c4c4;
+  transition: color 0.3s ease;
+}
+
+.linksList a:hover {
+  color: var(--color-gold);
+  padding-left: 5px;
+}
+
+.bottomBar {
+  background-color: var(--color-navy);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
