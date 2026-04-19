@@ -1,58 +1,40 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './LeadForm.module.css';
 
 export default function LeadForm() {
   const [status, setStatus] = useState('');
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('loading');
-    
+
     const form = e.target;
-    // We add the required _captcha false flag for AJAX to work seamlessly
     const formData = new FormData(form);
-    formData.append("_captcha", "false");
-    
+    formData.append('_captcha', 'false');
+
     try {
-      const res = await fetch("https://formsubmit.co/ajax/alonso@qintisolutions.com", {
-        method: "POST",
+      const res = await fetch('https://formsubmit.co/ajax/alonso@qintisolutions.com', {
+        method: 'POST',
         body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
+        headers: { Accept: 'application/json' },
       });
-      
-      if(res.ok) {
-        setStatus('success');
-        form.reset();
+
+      if (res.ok) {
+        router.push('/thank-you');
       } else {
         setStatus('error');
       }
-    } catch (err) {
+    } catch {
       setStatus('error');
     }
   };
 
-  if (status === 'success') {
-    return (
-      <div style={{ textAlign: 'center', padding: '3rem 1rem', color: 'var(--color-navy)' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '80px', height: '80px', borderRadius: '50%', backgroundColor: 'var(--color-gold)', color: 'var(--color-navy)', fontSize: '2.5rem', marginBottom: '1.5rem' }}>
-          ✓
-        </div>
-        <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontFamily: 'var(--font-serif)' }}>Quote Request Sent!</h3>
-        <p style={{ color: '#555', lineHeight: '1.6' }}>Thank you for reaching out to South Bay Home Painting. Your request has been securely processed and our team will contact you shortly.</p>
-        <button onClick={() => setStatus('')} style={{ marginTop: '2.5rem', background: 'transparent', border: 'none', color: 'var(--color-gold)', textDecoration: 'underline', fontWeight: 'bold', cursor: 'pointer' }}>Submit another request</button>
-      </div>
-    );
-  }
-
   return (
     <div className={styles.formWrapper}>
-      <form 
-        className={styles.leadForm} 
-        onSubmit={handleSubmit}
-      >
+      <form className={styles.leadForm} onSubmit={handleSubmit}>
         <input type="hidden" name="_subject" value="New Premium Lead: South Bay Home Painting Website!" />
         <input type="hidden" name="_template" value="table" />
 
@@ -60,7 +42,7 @@ export default function LeadForm() {
           <label htmlFor="name" className={styles.label}>Full Name *</label>
           <input type="text" id="name" name="name" required placeholder="John Doe" className={styles.input} />
         </div>
-        
+
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label htmlFor="phone" className={styles.label}>Phone Number *</label>
@@ -87,14 +69,14 @@ export default function LeadForm() {
             </select>
           </div>
           <div className={styles.formGroup}>
-             <label htmlFor="service" className={styles.label}>Service Needed *</label>
-             <select id="service" name="service" required className={styles.select}>
-               <option value="">Select a service...</option>
-               <option value="interior">Interior Painting</option>
-               <option value="exterior">Exterior Painting</option>
-               <option value="cabinets">Cabinet Painting</option>
-               <option value="other">Other / Not Sure</option>
-             </select>
+            <label htmlFor="service" className={styles.label}>Service Needed *</label>
+            <select id="service" name="service" required className={styles.select}>
+              <option value="">Select a service...</option>
+              <option value="interior">Interior Painting</option>
+              <option value="exterior">Exterior Painting</option>
+              <option value="cabinets">Cabinet Painting</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
           </div>
         </div>
 
@@ -109,7 +91,12 @@ export default function LeadForm() {
           </div>
         )}
 
-        <button type="submit" disabled={status === 'loading'} className="btn-primary" style={{width: '100%', opacity: status === 'loading' ? 0.7 : 1, transition: 'all 0.3s ease'}}>
+        <button
+          type="submit"
+          disabled={status === 'loading'}
+          className="btn-primary"
+          style={{ width: '100%', opacity: status === 'loading' ? 0.7 : 1, transition: 'all 0.3s ease' }}
+        >
           {status === 'loading' ? 'Processing...' : 'Request Free Quote'}
         </button>
       </form>
