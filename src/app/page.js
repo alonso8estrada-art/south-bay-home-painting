@@ -141,11 +141,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <a href="https://www.google.com/maps/search/South+Bay+Home+Painting+Torrance+CA" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-navy)', fontWeight: '600', borderBottom: '1px solid var(--color-gold)', paddingBottom: '2px' }}>
-              Read more reviews on Google →
-            </a>
-          </div>
         </div>
       </section>
 
