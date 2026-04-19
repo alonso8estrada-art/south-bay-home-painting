@@ -6,22 +6,44 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.footerContainer}`}>
+
         <div className={styles.column}>
-          <Image 
-            src="/logotransparent.png" 
-            alt="South Bay Home Painting logo" 
-            width={400} 
-            height={110} 
+          <Image
+            src="/logotransparent.png"
+            alt="South Bay Home Painting — Licensed Residential Painters in South Bay, CA"
+            width={400}
+            height={110}
             className={styles.logo}
           />
           <p className={styles.brandStatement}>
             South Bay Home Painting helps homeowners in the South Bay upgrade, protect, and refresh their homes with premium interior and exterior painting, professional prep, and clean execution.
           </p>
-          <div className={styles.contactInfo}>
-            <p><strong>Phone:</strong> <a href="tel:+13107041147">(310) 704-1147</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@southbayhomepainting.com">info@southbayhomepainting.com</a></p>
-            <p style={{ marginTop: '1rem', fontWeight: 'bold', color: 'var(--color-gold)' }}>LIC #1109637 Bonded & Insured</p>
-          </div>
+
+          <address
+            className={styles.contactInfo}
+            style={{ fontStyle: 'normal' }}
+            itemScope
+            itemType="https://schema.org/LocalBusiness"
+          >
+            <span itemProp="name" style={{ display: 'none' }}>South Bay Home Painting</span>
+            <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+              <span itemProp="addressLocality">Torrance</span>,{' '}
+              <span itemProp="addressRegion">CA</span>{' '}
+              <span itemProp="postalCode">90505</span>
+            </span>
+            <p><strong>Phone:</strong> <a href="tel:+13107041147" itemProp="telephone">(310) 704-1147</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@southbayhomepainting.com" itemProp="email">info@southbayhomepainting.com</a></p>
+            <p style={{ marginTop: '1rem', fontWeight: 'bold', color: 'var(--color-gold)' }}>LIC #1109637 Bonded &amp; Insured</p>
+          </address>
+
+          <a
+            href="https://www.google.com/maps/search/South+Bay+Home+Painting+Torrance+CA"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--color-gold)', fontSize: '0.9rem', textDecoration: 'underline' }}
+          >
+            ⭐ Leave us a Google review
+          </a>
         </div>
 
         <div className={styles.column}>
@@ -30,8 +52,8 @@ export default function Footer() {
             <li><Link href="/services/interior-painting">Interior House Painting</Link></li>
             <li><Link href="/services/exterior-painting">Exterior House Painting</Link></li>
             <li><Link href="/services/cabinet-painting">Cabinet Painting</Link></li>
-            <li><Link href="/services/interior-painting">Trim, Doors & Baseboards</Link></li>
-            <li><Link href="/services/exterior-painting">Stucco & Wood Repair</Link></li>
+            <li><Link href="/services/interior-painting">Trim, Doors &amp; Baseboards</Link></li>
+            <li><Link href="/services/exterior-painting">Stucco &amp; Wood Repair</Link></li>
           </ul>
         </div>
 
@@ -46,8 +68,9 @@ export default function Footer() {
             <li><Link href="/service-areas/el-segundo">El Segundo</Link></li>
           </ul>
         </div>
+
       </div>
-      
+
       <div className={styles.bottomBar}>
         <div className="container">
           <p>&copy; {new Date().getFullYear()} South Bay Home Painting. All rights reserved.</p>
