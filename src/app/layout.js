@@ -30,6 +30,9 @@ export const metadata = {
   },
   alternates: { canonical: 'https://www.southbayhomepainting.com/' },
   robots: { index: true, follow: true },
+  verification: {
+    google: 'dLs4jjiaW6GRYVZSepBvjcWnwCauTT2lHTATJHwiaFw',
+  },
 };
 
 export default function RootLayout({ children }) {
