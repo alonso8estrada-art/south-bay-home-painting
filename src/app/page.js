@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="House Painting in South Bay, CA — Premium Results That Last Years, Not Months"
-        subtitle="Interior & exterior house painters serving Torrance, Manhattan Beach, Redondo Beach, Hermosa Beach, Palos Verdes & El Segundo. Clean crews. Flawless finishes."
+        title="Premium House Painting in South Bay That Lasts Years - Not Months"
+        subtitle="Interior & exterior painting for homeowners in South Bay luxury communities. Clean crews. Flawless finishes."
         bgImage="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
       />
 
