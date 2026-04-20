@@ -18,7 +18,6 @@ export default function Footer() {
           <p className={styles.brandStatement}>
             South Bay Home Painting helps homeowners in the South Bay upgrade, protect, and refresh their homes with premium interior and exterior painting, professional prep, and clean execution.
           </p>
-
           <address
             className={styles.contactInfo}
             style={{ fontStyle: 'normal' }}
@@ -31,7 +30,10 @@ export default function Footer() {
               <span itemProp="addressRegion">CA</span>{' '}
               <span itemProp="postalCode">90505</span>
             </span>
-            <p><strong>Phone:</strong>
+            <p><strong>Phone:</strong> <a href="tel:+13107041147" itemProp="telephone">(310) 704-1147</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@southbayhomepainting.com" itemProp="email">info@southbayhomepainting.com</a></p>
+            <p style={{ marginTop: '1rem', fontWeight: 'bold', color: 'var(--color-gold)' }}>LIC #1109637 Bonded &amp; Insured</p>
+          </address>
         </div>
 
         <div className={styles.column}>
