@@ -25,9 +25,9 @@ export default function Footer() {
             itemType="https://schema.org/LocalBusiness"
           >
             <span itemProp="name" style={{ display: 'none' }}>South Bay Home Painting</span>
-            <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-              <span itemProp="addressLocality">Torrance</span>,{' '}
-              <span itemProp="addressRegion">CA</span>{' '}
+            <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress" style={{ display: 'none' }}>
+              <span itemProp="addressLocality">Torrance</span>
+              <span itemProp="addressRegion">CA</span>
               <span itemProp="postalCode">90505</span>
             </span>
             <p><strong>Phone:</strong> <a href="tel:+13107041147" itemProp="telephone">(310) 704-1147</a></p>
